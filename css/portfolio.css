@@ -1,11 +1,15 @@
 html, body {
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Noto Sans TC', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
+@media screen and (min-width:992px){
+    html, body {
+        overflow: hidden;
+    }
+}
 /* **********one-page-scroll-fsscroll********** */
 .container, .sections, .section {
     position: relative;
@@ -33,7 +37,7 @@ html, body {
 .section4 {
     background: rgb(255, 255, 255);
 }
-[data-fs-scroll] .page li{
+.scroll .page li{
     background: rgba(0, 0, 0, 0.295);
     height: 80px;
     width: 4px;
@@ -41,14 +45,14 @@ html, body {
     margin: 0;
     margin-right: 10px;
 }
-[data-fs-scroll] .page li.active{
+.scroll .page li.active{
     background: #000;
     border-radius: 4px;
     margin: 0;
     width: 4px;
     margin-right: 10px;
 }
-[data-fs-scroll] .page.vertical .active {
+.scroll .page.vertical .active {
     height: 80px;
     width: 4px;
     margin-right: 10px;

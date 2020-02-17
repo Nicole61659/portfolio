@@ -35,8 +35,8 @@
     </header>
 
     <!-- 程式one-page-scroll-fsscroll -->
-    <div class="container" data-fs-scroll>
-        <div class="sections">
+    <div class="container scroll">
+        <div class="sections" >
 
             <div id="icon" class="section section0">
                 <div class="container-main">
@@ -252,16 +252,23 @@
             fade: true,
             cssEase: 'linear'
         });
-
-        $('.container').fsScroll({
-            keyboard: true,
-            loop: false,
-            duration: 1200,
-        })
+        
+        if($(window).width()>992){
+            console.log("ok");
+            $('.container').fsScroll({
+                keyboard: true,
+                index:0,
+                pagination:true,
+                loop: false,
+                page: '.page',
+                active: '.active',
+                duration: 1200,
+            })
+        }
         // 程式 js one-page-scroll-fsscroll
     </script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -273,9 +280,8 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-        // 程式 js one-page-scroll-fsscroll
 
-    </script>
+    </script> -->
 
 </body>
 

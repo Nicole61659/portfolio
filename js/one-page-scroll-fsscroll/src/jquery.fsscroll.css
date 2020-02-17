@@ -1,13 +1,13 @@
-[data-fs-scroll] {
+.scroll {
   position: relative;
 }
 
-[data-fs-scroll] .page {
+.scroll .page {
   position: fixed;
   list-style: none;
 }
 
-[data-fs-scroll] .page.vertical {
+.scroll .page.vertical {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
@@ -16,7 +16,7 @@
   -o-transform: translateY(-50%);
 }
 
-[data-fs-scroll] .page.horizontal {
+.scroll .page.horizontal {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -25,7 +25,7 @@
   -o-transform: translateX(-50%);
 }
 
-[data-fs-scroll] .page li {
+.scroll .page li {
   width: 8px;
   height: 8px;
   background: rgba(255,255,255,.6);
@@ -34,19 +34,19 @@
   cursor: pointer;
 }
 
-[data-fs-scroll] .page li.active {
+.scroll .page li.active {
   border-radius: 6px;
   background: #fff;
 }
 
-[data-fs-scroll] .page.horizontal li {
+.scroll .page.horizontal li {
   display: inline-block;
 }
 
-[data-fs-scroll] .page.horizontal .active{
+.scroll .page.horizontal .active{
   width: 14px;
 }
 
-[data-fs-scroll] .page.vertical .active {
+.scroll .page.vertical .active {
   height: 14px;
 }

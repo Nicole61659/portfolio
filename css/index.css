@@ -80,6 +80,10 @@ p{
     color: rgb(255, 255, 255);
 }
 
+.btn06{
+    display: none;
+}
+
 .btn06:hover{
     background-color: #ffffff;
 }
