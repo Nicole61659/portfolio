@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="icon" href="images/logo-title.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="logo-index">
+        <div class="container-main">
+
+            <div class="index-area">
+                <div class="picture animated bounceInDown delay-0.9s">
+                    <img src="images/logo-index-black-name.png" alt="">
+                </div>
+                <div class="btn-area animated bounceInUp delay-0.9s">
+                    <button class="btn btn00">CLICK ME</button>
+                    <button class="btn btn01">icon</button>
+                    <button class="btn btn02">interface</button>
+                    <button class="btn btn03">web</button>
+                    <button class="btn btn04">3D model</button>
+                    <button class="btn btn05">Arduino</button>
+                    <button class="btn btn06 animated infinite flipInX delay-2s slow">
+                        <a href="portfolio.html">
+                            <i class="fas fa-arrow-down fa-lg"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/WOW-master/dist/wow.min.js"></script>
+    <script>
+
+        $('.btn00').click(function () {
+            $('.btn00').hide();
+            $('.btn01, .btn02, .btn03, .btn04, .btn05, .btn06').toggleClass('active');
+        })
+
+    </script>
+
+
+</body>
+
+</html>

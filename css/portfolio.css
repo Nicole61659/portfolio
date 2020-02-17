@@ -1,0 +1,925 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Noto Sans TC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* **********one-page-scroll-fsscroll********** */
+.container, .sections, .section {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section0 {
+    background: rgb(255, 255, 255);
+}
+.section1{
+    background: rgb(255, 255, 255);
+}
+.section2 {
+    background: rgb(255, 255, 255);
+}
+.section3 {
+    background: rgb(255, 255, 255);
+}
+.section4 {
+    background: rgb(255, 255, 255);
+}
+[data-fs-scroll] .page li{
+    background: rgba(0, 0, 0, 0.295);
+    height: 80px;
+    width: 4px;
+    border-radius: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+[data-fs-scroll] .page li.active{
+    background: #000;
+    border-radius: 4px;
+    margin: 0;
+    width: 4px;
+    margin-right: 10px;
+}
+[data-fs-scroll] .page.vertical .active {
+    height: 80px;
+    width: 4px;
+    margin-right: 10px;
+}
+@keyframes first-show {
+  0% {
+    left: 0px;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* **********one-page-scroll-fsscroll end********** */
+
+.section1 button.slick-prev.slick-arrow::before{
+    color:#fff;
+}
+.section1 button.slick-next.slick-arrow::before{
+    color:#fff;
+}
+.section3 button.slick-prev.slick-arrow::before{
+    color:#fff;
+}
+.section3 button.slick-next.slick-arrow::before{
+    color:#fff;
+}
+.section4 button.slick-prev.slick-arrow::before{
+    color:#fff;
+}
+.section4 button.slick-next.slick-arrow::before{
+    color:#fff;
+}
+/* slick箭頭變白色 */
+
+  .overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 99;
+  }
+/* 浮出頁面 先寫全域頁面覆蓋 再出現 */
+
+/* ********** header ********** */
+/* ********** header ********** */
+/* ********** header ********** */
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.699);
+    z-index: 99;
+}
+
+.container-main{
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+}
+
+header .container-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a{
+    display: block;
+}
+
+.logo {
+    width: 60px;
+    height: 46px;
+    margin: 10px 0px;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.navbar>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.navbar>ul>li {
+    line-height: 66px;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar>ul>li>a:hover {
+    color: rgb(255, 0, 0);
+    border-bottom: 1px solid #ff0000;
+}
+
+/* ********** icon ********** */
+/* ********** icon ********** */
+/* ********** icon ********** */
+.icon{
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    margin-top: 66px;
+}
+
+.block01{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.icon-phone{
+    margin: auto;
+}
+
+.icon-phone img{
+    max-width: 200px;
+    margin: auto;
+    width: 100%;
+    padding-top: 13%;
+}
+
+.icon-font{
+    text-align: left;
+    letter-spacing: .1em;
+}
+
+.icon-title{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20%;
+}
+
+.icon-whiztouch{
+    width: 142px;
+    line-height: 60px;
+    padding: 0% 10%;
+}
+
+.icon-whiztouch img{
+    max-width: 100%;
+}
+
+.icon-font h4{
+    margin: 0px;
+    line-height: 53px;
+    width: 30%;
+}
+
+.icon-block{
+    width: 103px;
+    padding: 0% 5%;
+    margin-left: 8%;
+}
+
+.icon-block img{
+    max-width: 100%;
+}
+
+.icon-font p{
+    margin: 5px 0px 0px 0px;
+}
+
+/* ********** interface ********** */
+/* ********** interface ********** */
+/* ********** interface ********** */
+.interface{
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px;
+}
+
+.block02 .inner{
+    position: relative;
+}
+/* ********** interface-main ********** */
+/* ********** interface-main ********** */
+.interface-main{
+    max-width: 200px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-main img{
+    width: 100%;
+    height: 100%;
+}
+
+.font{
+    position: absolute ;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.interface-main p{
+    text-align: center;
+    margin: auto;
+    letter-spacing: .1em;
+}
+
+.p-padding01{
+    padding: 5px 0px;
+}
+
+.p-padding02{
+    padding: 40px 20px;
+}
+/* ********** interface-content-1 ********** */
+/* ********** interface-content-1 ********** */
+.interface-content-1{
+    max-width: 200px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-content-1>div{
+    position: relative;
+}
+
+.interface-content-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.interface-title-main{
+    position: absolute ;
+    top: -50px;
+    left: 38%;
+}
+
+.interface-content-1-01{
+    display: none;
+    position: absolute ;
+    top: 45px;
+    left: -170px;
+}
+
+.interface-content-1>div::before{
+    visibility: hidden;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    top: 74px;
+    left: -60px;
+}
+
+.interface-content-1-02{
+    display: none;
+    position: absolute ;
+    top: 230px;
+    right: -170px;
+}
+
+.interface-content-1>div::after{
+    display: none;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    top: 260px;
+    left: 290px;
+}
+/* ********** interface-content-2 ********** */
+/* ********** interface-content-2 ********** */
+.interface-content-2{
+    max-width: 588px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-content-2>div{
+    position: relative;
+}
+
+.interface-content-2 img{
+    width: 90%;
+    margin: auto;
+}
+
+.interface-title-list{
+    position: absolute ;
+    top: -50px;
+    left: 40%;
+}
+
+.interface-content-2-01{
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: -40px;
+}
+
+.interface-content-2>div::before{
+    visibility: hidden;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    top: 67px;
+    left: 0px;
+}
+/* ********** interface-content-3 ********** */
+/* ********** interface-content-3 ********** */
+.interface-content-3{
+    max-width: 588px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-content-3>div{
+    position: relative;
+}
+
+.interface-content-3 img{
+    width: 90%;
+    margin: auto;
+}
+
+.interface-title{
+    position: absolute ;
+    top: -50px;
+    left: 29%;
+}
+/* interface-title : interface-content-3 到 interface-content-7 的 class共用 */
+
+.interface-content-3-01{
+    position: absolute ;
+    top: 267px;
+    left: 14.5%;
+}
+/* ********** interface-content-4 ********** */
+/* ********** interface-content-4 ********** */
+.interface-content-4{
+    max-width: 588px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-content-4>div{
+    position: relative;
+}
+
+.interface-content-4 img{
+    width: 90%;
+    margin: auto;
+}
+
+.interface-content-4-01{
+    position: absolute ;
+    top: 267px;
+    left: 5.2%;
+}
+/* ********** interface-content-5 ********** */
+/* ********** interface-content-5 ********** */
+.interface-content-5{
+    max-width: 588px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-content-5>div{
+    position: relative;
+}
+
+.interface-content-5 img{
+    width: 90%;
+    margin: auto;
+}
+
+.interface-content-5-01{
+    position: absolute ;
+    top: 267px;
+    left: 5%;
+    width: 310px;
+}
+/* ********** interface-content-6 ********** */
+/* ********** interface-content-6 ********** */
+.interface-content-6{
+    max-width: 588px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-content-6>div{
+    position: relative;
+}
+
+.interface-content-6 img{
+    width: 90%;
+    margin: auto;
+}
+
+.interface-content-6-01{
+    display: none;
+    position: absolute ;
+    top: 527px;
+    left: -0.5%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface-content-6-01 span{
+    display: block;
+}
+/* ********** interface-content-7 ********** */
+/* ********** interface-content-7 ********** */
+.interface-content-7{
+    max-width: 588px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.interface-content-7>div{
+    position: relative;
+}
+
+.interface-content-7 img{
+    width: 90%;
+    margin: auto;
+}
+
+.interface-content-7-01{
+    position: absolute ;
+    top: 267px;
+    left: 4%;
+    width: 310px;
+}
+
+/* ********** web ********** */
+/* ********** web ********** */
+/* ********** web ********** */
+.web{
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px;
+}
+
+.block03{
+    margin: auto;
+    width: 90%;
+    max-width: 937px;
+    text-align: center;
+}
+
+.block03 img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+    font-size: 1em;
+    max-width: 100%;
+    width: 40%;
+    line-height: 30px;
+}
+
+.btn:hover{
+    background-color: rgb(102, 102, 102);
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+}
+/* ********** 3d ********** */
+/* ********** 3d ********** */
+/* ********** 3d ********** */
+.model{
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px;
+}
+
+.block04{
+    margin: auto;
+    width: 80%;
+    max-width: 443px;
+    text-align: center;
+}
+
+.banner-model {
+    max-width: 100%;
+    margin: auto;
+}
+
+.banner-model img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.model-font{
+    text-align: left;
+    letter-spacing: .1em;
+}
+
+.model-font h4{
+    margin: 25px 0px 0px 0px;
+}
+
+.model-font p{
+    margin: 5px 0px 0px 0px;
+}
+
+/* ********** arduino ********** */
+/* ********** arduino ********** */
+/* ********** arduino ********** */
+.arduino{
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+}
+
+.block05{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+}
+
+.arduino-font{
+    text-align: left;
+    letter-spacing: .1em;
+    flex-basis: 50%;
+    padding-left: 6%;
+    box-sizing: border-box;
+}
+
+.arduino-font h4{
+    margin: 25px 0px 0px 0px;
+}
+
+.arduino-font p{
+    margin: 5px 0px 0px 0px;
+}
+
+.banner-arduino {
+    margin: auto;
+    /* width: 429px; */
+    width: 270px;
+}
+
+.banner-arduino img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 768px){
+    /* ********** icon ********** */
+    /* ********** icon ********** */
+    /* ********** icon ********** */
+    .block01{
+        flex-direction: row;
+    }
+
+    .icon-phone{
+        flex-basis: 45%;
+    }
+
+    .icon-phone img{
+        max-width: 255px;
+        padding-left: 0px; 
+        padding-top: 0%;
+    }
+
+    .icon-font{
+        flex-basis: 55%;
+        padding: 180px 0px ;
+    }
+
+    .icon-title{
+        align-content: center;
+        padding-top: 0%;
+    }
+
+    .icon-whiztouch{
+        padding-left: 0%;
+        height: 50px;
+        padding-right: 5%;
+    }
+
+    .icon-font h4{
+        padding-right: 8%;
+        height: 50px;
+    }
+    
+    .icon-block{
+        padding: 5% 5% 0% 5%;
+    }
+    /* ********** interface ********** */
+    /* ********** interface ********** */
+    /* ********** interface ********** */
+    .interface-main{
+        max-width: 280px;
+    }
+
+    .interface-title-main{
+        left: 42%;
+    }
+
+    .interface-content-1{
+        max-width: 280px;
+    }
+
+    .interface-content-1-01{
+        display: block;
+    }
+
+    .interface-content-1>div::before{
+        visibility: visible;
+    }
+    
+    .interface-content-1-02{
+        display: block;
+    }
+    
+    .interface-content-1>div::after{
+        display: block;
+    }
+
+    .interface-content-2{
+        max-width: 603px;
+    }
+
+    .interface-title-list{
+        left: 44.5%;
+    }
+
+    .interface-content-2-01{
+        display: block;
+    }
+    
+    .interface-content-2>div::before{
+        visibility: visible;
+    }
+
+    .interface-content-3{
+        max-width: 603px;
+    }
+
+    .interface-title{
+        position: absolute ;
+        top: -50px;
+        left: 38.5%;
+    }
+
+    .interface-content-3{
+        max-width: 603px;
+    }
+
+    .interface-title-list{
+        left: 44.5%;
+    }
+
+    .interface-content-3-01{
+        top: 485px;
+        left: 30.5%;
+    }
+
+    .interface-content-4{
+        max-width: 603px;
+    }
+
+    .interface-content-4-01{
+        top: 485px;
+        left: 25%;
+    }
+
+    .interface-content-5{
+        max-width: 603px;
+    }
+
+    .interface-content-5-01{
+        top: 485px;
+        left: 1%;
+        width: 600px;
+    }
+
+    .interface-content-6{
+        max-width: 603px;
+    }
+
+    .interface-content-6-01{
+        top: 485px;
+        left: 1%;
+    }
+
+    .interface-content-7{
+        max-width: 603px;
+    }
+
+    .interface-content-7-01{
+        top: 485px;
+        left: 1%;
+        width: 600px;
+    }
+    /* ********** web ********** */
+    /* ********** web ********** */
+    /* ********** web ********** */
+    .block03{
+        width: 80%;
+    }
+
+    .btn{
+        width: 20%;
+        line-height: 40px;
+    }
+    
+    .btn a{
+        font-size: 16px;
+    }
+    /* ********** arduino ********** */
+    /* ********** arduino ********** */
+    /* ********** arduino ********** */
+    .block05{
+        flex-direction: row;
+    }
+
+    .arduino-font{
+        padding-left: 3%;
+    }
+
+    .arduino-font h4{
+        margin: 10px 0px 0px 0px;
+    }
+
+    .banner-arduino {
+        width: 320px;
+    }
+
+}/* ********** min-width: 768px end ********** */
+
+
+@media screen and (min-width: 1024px){
+    .section1 button.slick-prev.slick-arrow::before{
+        color:rgb(0, 0, 0);
+    }
+    .section1 button.slick-next.slick-arrow::before{
+        color:rgb(0, 0, 0);
+    }
+
+    /* ********** icon ********** */
+    /* ********** icon ********** */
+    /* ********** icon ********** */
+    .icon-phone{
+        flex-basis: 45%;
+    }
+
+    .icon-font{
+        flex-basis: 55%;
+        padding: 200px 0px;
+    }
+
+    .icon-whiztouch{
+        height: 50px;
+        width: 30%;
+        padding-top: 5%;
+        padding-right: 3%;
+    }
+
+    .icon-font h4{
+        padding-right: 0%;
+        width: 20%;
+        padding-top: 5%;
+        padding-right: 0%;
+    }
+    
+    .icon-block{
+        padding: 0%;
+        margin-left: 3%;
+    }
+
+    /* ********** arduino ********** */
+    /* ********** arduino ********** */
+    /* ********** arduino ********** */
+    .arduino-font{
+        padding-left: 15%;
+    }
+
+    .arduino-font h4{
+        margin: 30px 0px 0px 0px;
+    }
+
+    .banner-arduino {
+        width: 380px;
+    }
+
+}/* ********** min-width: 1024px end ********** */
+
+
+@media screen and (min-width: 1440px){
+    /* ********** icon ********** */
+    /* ********** icon ********** */
+    /* ********** icon ********** */
+    .icon-phone{
+        flex-basis: 50%;
+    }
+
+    .icon-phone img{
+        max-width: 300px;
+        padding-left: 0px; 
+    }
+
+    .icon-font{
+        flex-basis: 50%;
+        padding: 25% 0%;
+    }
+    /* ********** arduino ********** */
+    /* ********** arduino ********** */
+    /* ********** arduino ********** */
+    .arduino-font{
+        padding-left: 13%;
+    }
+
+    .arduino-font h4{
+        margin: 50px 0px 0px 0px;
+    }
+
+    .banner-arduino {
+        width: 476px;
+    }
+    
+}/* ********** min-width: 1440px end ********** */
+
+
+/* ********** copyright ********** */
+/* ********** copyright ********** */
+/* ********** copyright ********** */
+.section4 {
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    text-align: center;
+    line-height: 40px;
+    color: #000000;
+    font-size: 12px;
+}

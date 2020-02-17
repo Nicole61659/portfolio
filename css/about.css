@@ -1,0 +1,316 @@
+html, body {
+    margin: 0;
+    /* height: 100%; */
+    /* overflow: hidden; *//* 影響全域 掛載one-page-scroll-fsscroll使用 */
+    font-family: 'Noto Sans TC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h4{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+p{
+    margin: 5px 0px 0px 0px;
+}
+/* ********** header ********** */
+/* ********** header ********** */
+/* ********** header ********** */
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.699);
+    z-index: 99;
+}
+
+.container-main{
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+}
+
+header .container-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a{
+    display: block;
+}
+
+.logo {
+    width: 60px;
+    height: 46px;
+    margin: 10px 0px;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.navbar>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.navbar>ul>li {
+    line-height: 66px;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar>ul>li>a:hover {
+    color: rgb(255, 0, 0);
+    border-bottom: 1px solid #ff0000;
+}
+
+/* ********** about ********** */
+/* ********** about ********** */
+/* ********** about ********** */
+.about{
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px;
+    margin-top: 66px;
+}
+.block01{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+/* ********** 個人資料 ********** */
+.about-information{
+    text-align: left;
+    letter-spacing: .1em;
+    flex-basis: 50%;
+}
+
+.about-picture{
+    margin: auto;
+    width: 80%;
+    max-width: 360px;
+    padding-top: 18%;
+    padding-bottom: 20px;
+}
+
+.about-picture img{
+    width: 100%;
+}
+
+.about-information-font{
+    padding-top: 5%;
+    width: 95%;
+    margin: auto;
+}
+
+.about-information-block01,
+.about-information-block02{
+    padding-bottom: 30px;
+}
+
+.name-block{
+    display: flex;
+}
+
+.about-information-block01 .name{
+    padding-right: 18%;
+}
+
+.about-information-font i{
+    padding-right: 3.5%;
+}
+
+/* ********** 學歷 ********** */
+.about-education{
+    text-align: left;
+    letter-spacing: .1em;
+    flex-basis: 50%;
+}
+
+.about-education-font{
+    padding: 30px 0px;
+    width: 95%;
+    margin: auto;
+}
+
+/* line 區隔 */
+.line{
+    border: 1px solid #000000;
+    width: 95%;
+    margin: auto;
+}
+
+/* ********** 研究 ********** */
+.block02{
+    padding: 30px 0px;
+    margin: auto; 
+}
+
+/* ********** 競賽 ********** */
+.block03{
+    padding: 30px 0px 100px 0px;
+    margin: auto; 
+}
+
+.about-research-font,
+.about-competition-font{
+    margin: auto;
+    width: 95%;
+}
+
+
+@media screen and (min-width: 768px){ 
+    .block01{
+        flex-direction: row;
+        padding: 55px 0px 10px 0px;
+    }
+
+    .about-picture{
+        margin: auto;
+        width: 80%;
+        max-width: 360px;
+        padding-top: 15%;
+        padding-left: 8%;
+    }
+
+    .about-information-font{
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+
+    .about-information-block01,
+    .about-information-block02{
+        padding-bottom: 20px;
+    }
+
+    .about-information-block01 .name{
+        padding-right: 17.5%;
+    }
+
+    .line-display{
+        display: none;
+    }    
+
+    .about-education-font{
+        padding-left: 9%;
+        padding-top: 54%;
+    }
+
+    .line{
+        border: 1px solid #000000;
+        width: 90%;
+        margin: auto;
+    }
+
+    .block03{
+        padding: 20px 0px 100px 0px;
+        margin: auto; 
+    }
+
+    .about-research-font,
+    .about-competition-font{
+        margin: auto;
+        width: 90%;
+    }
+}/* ********** min-width: 768px end ********** */
+
+
+@media screen and (min-width: 1024px){
+    .block01{
+        padding: 35px 0px 0px 0px;
+    }
+
+    .about-picture{
+        padding-top: 10%;
+        padding-left: 16%;
+    }
+
+    .about-information-font{
+        padding-left: 19%;
+        padding-top: 0%;
+    }
+
+    .about-information-block01 .name{
+        padding-right: 24%;
+    }
+
+    .about-education-font{
+        padding-left: 20%;
+        padding-top: 38%;
+        width: 80%;
+    }
+    
+    .line{
+        width: 82%;
+    }
+
+    .block03{
+        padding: 20px 0px 125px 0px;
+    }
+
+    .about-research-font,
+    .about-competition-font{
+        padding-left: 9.5%;
+    }
+}/* ********** min-width: 1024px end ********** */
+
+
+@media screen and (min-width: 1440px){
+    .block01{
+        padding: 75px 0px 0px 0px;
+    }
+
+    .about-picture{
+        padding-top: 10%;
+        padding-left: 20%;
+    }
+
+    .about-information-font{
+        padding-left: 26%;
+        padding-top: 0%;
+    }
+
+    .about-information-block01 .name{
+        padding-right: 26%;
+    }
+
+    .about-education-font{
+        padding-left: 22%;
+        padding-top: 33%;
+    }
+    
+    .line{
+        width: 74%;
+    }
+
+    .block03{
+        padding: 20px 0px 145px 0px;
+    }
+
+    .about-research-font,
+    .about-competition-font{
+        padding-left: 13%;
+    }
+}/* ********** min-width: 1440px end ********** */
+
+
+/* ********** copyright ********** */
+/* ********** copyright ********** */
+/* ********** copyright ********** */
+.copyright {
+    width: 100vw;
+    background-color: rgb(204, 204, 204);
+    text-align: center;
+    line-height: 40px;
+    color: #000000;
+    font-size: 12px;
+}

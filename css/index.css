@@ -1,0 +1,195 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h4{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+p{
+    margin: 5px 0px 0px 0px;
+}
+/* ********** logo-index ********** */
+/* ********** logo-index ********** */
+/* ********** logo-index ********** */
+.container-main{
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+}
+
+.logo-index .container-main{
+    text-align: center;
+    position: relative;
+}
+
+.index-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.picture{
+    margin: auto;
+    width: 30%;
+    max-width: 125px;
+}
+
+.picture img{
+    max-width: 100%;
+}
+
+.btn-area{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+}
+
+/* 影響按鈕 相對定位 */
+.btn{
+    position: absolute;
+    left: 95px;
+    border: 1px solid #000000;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin: 20px 10px;
+    transition:  1s;
+    display: block;
+}
+
+.btn:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.btn06:hover{
+    background-color: #ffffff;
+}
+/* 箭頭:hover */
+.btn00{
+    z-index: 6;
+}
+/* 第一個btn寫在最上面 */
+.btn02 {
+    z-index: 2;
+}
+/* 中間btn寫在最上面 扶起來 */
+.btn01:hover, .btn02:hover, .btn03:hover, .btn04:hover, .btn05:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 1px solid #000000;
+}
+.btn01.active{
+    left: -20px;
+    width: 100px;
+    top: 0px;
+}
+.btn02.active{
+    left: 95px;
+    width: 100px;
+}
+.btn03.active{
+    left: 210px;
+    width: 100px;
+}
+.btn04.active{
+    left: 33px;
+    width: 100px;
+    top: 60px;
+}
+.btn05.active{
+    left: 155px;
+    width: 100px;
+    top: 60px;
+}
+/* btn01-btn05寫絕對定位 */
+.btn06.active{
+    left: 120px;
+    top: 120px;
+    border: none;
+}
+/* 箭頭.active */
+
+
+@media screen and (min-width: 768px){ 
+    .picture{
+        width: 20%;
+    }
+    .btn-area{
+        position: relative;
+        width: 760px;
+        margin: auto;
+        height: 100px;
+    }
+    .btn{
+        left: 290px;
+    }
+    .btn03 {
+        z-index: 3;
+    }
+    .btn01.active{
+        left: 30px;
+    }
+    .btn02.active{
+        left: 160px;
+    }
+    .btn03.active{
+        left: 290px;
+    }
+    .btn04.active{
+        left: 420px;
+        top: 0px;
+    }
+    .btn05.active{
+        left: 545px;
+        top: 0px;
+    }
+    .btn06.active{
+        left: 315px;
+    }
+}/* ********** min-width: 768px end ********** */
+
+
+@media screen and (min-width: 1024px){
+    .btn{
+        left: 325px;
+    }
+    .btn01.active{
+        left: 75px;
+    }
+    .btn02.active{
+        left: 200px;
+    }
+    .btn03.active{
+        left: 325px;
+    }
+    .btn04.active{
+        left: 455px;
+        top: 0px;
+    }
+    .btn05.active{
+        left: 583px;
+        top: 0px;
+    }
+    .btn06.active{
+        left: 349px;
+    }
+}/* ********** min-width: 1024px end ********** */
